@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>ページ１</h1>
+    <h2>見出し１</h2>
+
+    <form action="/result" method="POST" id="ajax-result">
+        <input type="hidden" name="start_scraping" value="true">
+        <button type="submit" class="btn" onclick="OnButtonClick();" style="margin-top: 30px;">取得開始</button>
+    </form>
+
+
+    <p><br></p>
+    <p><br></p>
+
+{% endblock %}
